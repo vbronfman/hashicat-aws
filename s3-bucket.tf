@@ -1,7 +1,7 @@
 module "s3_bucket" {
   source = "terraform-aws-modules/s3-bucket/aws"
 
-  bucket = "my-s3-bucket_vladbronfman"
+  bucket = "my-s3-bucket-vladbronfman"
   acl    = "private"
   # bucket_prefix = "vladbronfman" 
 
