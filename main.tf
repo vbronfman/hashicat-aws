@@ -196,6 +196,7 @@ locals {
 }
 
 resource "aws_key_pair" "hashicat" {
-  key_name   = local.private_key_filename
+  # key_name   = local.private_key_filename
+  key_name   = "mypair"
   public_key = tls_private_key.hashicat.public_key_openssh
 }
